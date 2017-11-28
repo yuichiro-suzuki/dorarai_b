@@ -61,21 +61,21 @@ textarea {
 	  font-size:20px;
 	  float:left;
 	  padding-left: 0px;
-	  padding-right: 0px;
+	  padding-right: 30px;
 	  text-decoration: none;
 	  color: red;
 	}
 }
-/*pc*/
+/*スマホ*/
 .titi {
   top-margin: 0;
-  font-size:22px;
+  font-size:18px;
 	float:left;
   text-align: center;
   text-decoration: none;
 }
 @media screen and (min-width: 800px) {
-   /* 表示領域が800px以上の場合に適用するスタイルPC */
+   /* PCログイン時 */
 	 .titi {
 	   top-margin: 0;
 	   font-size:22px;
@@ -87,14 +87,18 @@ textarea {
 }
 p :hover { text-decoration: none;}
 div :hover { text-decoration: none;}
-.tit {
+@media screen and (min-width: 800px) {
+	/* PCログアウト時 */
+  .tit {
   top-margin: 0;
   font-size:23px;
   float:left;
   padding-right: 350px;
   text-decoration: none;
+  }
 }
-/*スマホ　*/
+
+/*スマホログアウト時*/
 @media screen and (max-width: 640px) {
 	.tit {
 	  top-margin: 0;
