@@ -4,8 +4,8 @@
 /* universal */
 @media screen and (max-width: 640px) {
 	img {
-		width: 320px;
-		height: 160px;
+		max-width: 90% ;		/* 横幅の90% */
+		height: auto ;			/* 縦幅を自動調整 */
 	}
 }
 body {
@@ -57,7 +57,7 @@ textarea {
 .titi {
   top-margin: 0;
   font-size:22px;
-  float:left;
+  text-align: center;
   padding-right: 400px;
   text-decoration: none;
 }
