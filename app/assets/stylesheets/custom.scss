@@ -31,7 +31,7 @@ textarea {
 
 /* header */
 .header {
-  background-color: #FFFFFF;
+  background-color: #EEEEEE;
 }
 
 #logo {
@@ -40,6 +40,12 @@ textarea {
 .headersize {
   margin-bottom: 35px;
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 640px) {
+	.headersize {
+	  margin-bottom: 0px;
+	  background-color: #EEEEEE;
+	}
 }
 * {
   margin: 0;
@@ -69,7 +75,7 @@ textarea {
 /*スマホ*/
 .titi {
   top-margin: 0;
-	margin-left: 70px;
+	margin-left: 65px;
   font-size:17px;
 	float:left;
   text-align: center;
@@ -104,7 +110,7 @@ div :hover { text-decoration: none;}
 	.tit {
 	  top-margin: 0;
 	  font-size:17px;
-		margin-left: 70px;
+		margin-left: 65px;
 	  float:left;
 		text-align: center;
 	  text-decoration: none;
