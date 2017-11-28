@@ -114,7 +114,12 @@ div :hover { text-decoration: none;}
 	  float:left;
 		text-align: center;
 	  text-decoration: none;
-		border: 1px solid #bbb;
+
+		border-width: 0px 3px 0px 0px;
+		border-style: solid;
+		border-color: #cccccc;
+		height: 1px;
+
 	}
 }
 .dropdown-toggle {
@@ -138,6 +143,25 @@ div :hover { text-decoration: none;}
   font-size:24px;
   border-width: medium ;
 }
+
+ body {
+    margin: 0;
+}
+
+#hoge {
+    width: 100%;
+}
+
+.sidebor {
+  /*  画面縦幅　*/
+  height:5000px;
+  border-style : solid;
+  border-color: #cccccc;
+  background-color: #FFFFFF;
+  margin-bottom: 100px;
+	margin-top: 30px;
+
+}
 @media only screen and (max-device-width: 480px) {
  /* スマホ用のCSS */
  .sidebor {
@@ -146,24 +170,8 @@ div :hover { text-decoration: none;}
    border-style : solid;
    border-color: #cccccc;
    background-color: #FFFFFF;
-   margin-bottom: 100px;
+   margin-bottom: 10px;
  }
- body {
-    margin: 0;
-}
-
-#hoge {
-    width: 100%;
-}
-}
-.sidebor {
-  /*  画面縦幅　*/
-  height:5000px;
-  border-style : solid;
-  border-color: #cccccc;
-  background-color: #FFFFFF;
-  margin-bottom: 100px;
-
 }
 .page {
   padding-left:30px;
