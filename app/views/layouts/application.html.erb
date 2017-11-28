@@ -6,7 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/assets/caticon.ico' %>
-  <meta name="viewport" content="width=device-width">
+  <%= analytics_init if Rails.env.production? %>
+  <!-- <meta name="viewport" content="width=device-width"> -->
 </head>
 <body>
   <%= render 'layouts/header' %>
