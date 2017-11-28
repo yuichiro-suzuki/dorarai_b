@@ -66,6 +66,7 @@ textarea {
 	  top-margin: 0;
 	  font-size:20px;
 	  float:right;
+		margin-top: 30px;
 	  padding-left: 0px;
 	  padding-right: 30px;
 	  text-decoration: none;
@@ -114,12 +115,12 @@ div :hover { text-decoration: none;}
 	  float:left;
 		text-align: center;
 	  text-decoration: none;
-
-		border-width: 0px 3px 0px 0px;
+	}
+	.board {
+		border-width: 3px 0px 0px 0px;
 		border-style: solid;
 		border-color: #cccccc;
 		height: 1px;
-
 	}
 }
 .dropdown-toggle {
