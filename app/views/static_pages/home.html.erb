@@ -1,0 +1,46 @@
+<div class="sidebor">
+<ul class="nav nav-tabs nav-justified">
+	<li role="presentation" class="active"><a href="#">非公式大会参加</a></li>
+	<li role="presentation"><a href = "/static_pages/home_b" %>非公式大会募集</a></li>
+	<li role="presentation"><a href="/static_pages/home_c">フリーマッチ</a></li>
+  <li role="presentation"><a href="/static_pages/home_d">ギルド募集</a></li>
+</ul>
+<!-- 日付による昇順降順昨日の追加-->
+   <div class="date"><%= I18n.l Date.today, :format => :long %></div>
+	  <div class="row ">
+			<aside class="col-sm-8">
+       <ol class="microposts">
+         <%= render @microposts %>
+       </ol>
+			 <div class="page"><%= paginate @microposts %></div>
+			</aside>
+			<div class="col-sm-4">
+        <%= render 'shared/micropost_hot' %>
+			</div>
+			<!--別ファイル作成行数短縮⬇︎-->
+			<dic class="point">
+			  <div class="panel panel-danger">
+			  	<div class="panel-heading">
+			  		広告(ここから購入してくださると管理人のやる気と次回大会の賞金が上がります！笑)
+			  	</div>
+			  	<div class="panel-body">
+						<a href="https://rpx.a8.net/svt/ejp?a8mat=2TVFW2+6HDXWY+2HOM+63H8H&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa17110888833_2TVFW2_6HDXWY_2HOM_63H8H%3Fpc%3Dhttp%253A%252F%252Fwww.rakuten.co.jp%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252F" target="_blank" rel="nofollow">
+            <img src="http://hbb.afl.rakuten.co.jp/hsb/0ec09b9b.f2fdca6c.0eb4bbaa.95151395/" border="0"></a>
+            <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=2TVFW2+6HDXWY+2HOM+63H8H" alt="">
+						<!-- <p class="kakin">学生が課金するための方法</p> -->
+					</br>
+					<p class="kakin">スキマ時間で課金額稼ぎ！私が利用したことのあるおすすめのみ載せます！</p>
+						<a href="https://px.a8.net/svt/ejp?a8mat=2TVNQB+4RGV02+1LP8+C1TA9" target="_blank" rel="nofollow">
+　　　　　　　<img border="0" width="234" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=171118307288&wid=001&eno=01&mid=s00000007478002024000&mc=1"></a>
+　　　　　　　<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=2TVNQB+4RGV02+1LP8+C1TA9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=2TVNQB+4KBNQQ+2WL0+C1LKH" target="_blank" rel="nofollow">
+　　　　　　　<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=171118307276&wid=001&eno=01&mid=s00000013554002023000&mc=1"></a>
+　　　　　　　<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=2TVNQB+4KBNQQ+2WL0+C1LKH" alt="">
+			  	</div>
+			  </div>
+			</div>
+
+	  </div>
+		（C）2017 ARMOR PROJECT/BIRD STUDIO/SQUARE ENIX All Rights Reserved.
+		（C）SUGIYAMA KOBO
+</div>

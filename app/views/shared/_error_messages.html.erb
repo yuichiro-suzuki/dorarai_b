@@ -1,0 +1,21 @@
+<% if object.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      エラーが <%= pluralize(object.errors.count, "つあります") %>.
+    </div>
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+    <% if msg == "Password can't be blank"%>
+      <% msg = "パスワードが空です" %>
+    <% end %>
+    <% if msg == "Name can't be blank"%>
+      <% msg = "Playernameが空です" %>
+    <% end %>
+    <% if msg == "Password confirmation doesn't match Password"%>
+          <% msg = "パスワードがマッチしていません" %>
+    <% end %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

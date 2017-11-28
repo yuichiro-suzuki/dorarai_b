@@ -1,0 +1,20 @@
+<div class="sidebor">
+<div class="row">
+<h1>
+  <%= image_for(@user) %>
+  <%= @user.name %>
+</h1>
+<h2>
+　ここで参加予定大会の確認とログイン
+</h2>
+
+  <div class="col-md-8">
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+    <% end %>
+  </div>
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="sidebor">
+<ul class="nav nav-tabs nav-justified">
+	<li role="presentation"><a href = "/static_pages/home" >非公式大会参加</a></li>
+	<li role="presentation" class="active"><a href =" /static_pages/home_b">非公式大会募集</a></li>
+	<li role="presentation"><a href="/static_pages/home_c">フリーマッチ</a></li>
+  <li role="presentation"><a href="/static_pages/home_d">ギルド募集</a></li>
+</ul>
+<% if logged_in? %>
+	<div class="row">
+		<aside class="col-md-8">
+			<section class="user_info">
+				<%= render 'shared/user_info' %>
+			</section>
+			<section class="micropost_form">
+				<%= render 'shared/micropost_form' %>
+			</section>
+		  <section class="micropost_sample">
+        <%= render 'shared/micropost_sample' %>
+			</section>
+		</aside>
+		<div class="col-sm-4"><%= render 'shared/micropost_point' %></div>
+	</div>
+<% else %>
+	<div class="center jumbotron">
+		<h1>登録者のみ募集可能です</h1>
+
+		<%= link_to "簡単登録する!（名前とパスワードのみ）", signup_path, class: "btn btn-lg btn-primary" %>
+	</div>
+<% end %>
+</div>

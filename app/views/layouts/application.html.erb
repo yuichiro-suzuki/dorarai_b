@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ドラクエライバルズ非公式大会掲示板</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag '/assets/caticon.ico' %>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <%= render 'layouts/header' %>
+  <br>
+  <div class="container">
+    <% flash.each do |message_type, message| %>
+　  <div class="alert alert-<%= message_type %>"><%= message %></div>
+　  <% end %>
+    <%= yield %>
+  </div>
+</body>
+</html>

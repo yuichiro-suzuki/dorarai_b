@@ -1,0 +1,20 @@
+<div class="sidebor">
+<ul class="nav nav-tabs nav-justified">
+	<li role="presentation"><a href = "/static_pages/home" >非公式大会参加</a></li>
+	<li role="presentation"><a href =" /static_pages/home_b">非公式大会募集</a></li>
+	<li role="presentation"><a href="/static_pages/home_c">フリーマッチ</a></li>
+  <li role="presentation" class="active"><a href="/static_pages/home_d">ギルド募集</a></li>
+</ul>
+<div class="row">
+	<aside class="col-md-5">
+		<section class="freetpost_form">
+			<%= render 'shared/firstpost_form' %>
+		</section>
+	</aside>
+</div>
+<div class="col-md-5">
+		<ol class="freeposts">
+			<%= render @firstposts %>
+		</ol>
+</div>
+</div>

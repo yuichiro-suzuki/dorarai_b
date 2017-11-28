@@ -1,0 +1,6 @@
+<li id="firstpost-<%= firstpost.id %>">
+  <span class="content"><%= firstpost.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(firstpost.created_at) %> ago.
+  </span>
+</li>
