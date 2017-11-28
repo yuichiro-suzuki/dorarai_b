@@ -57,9 +57,20 @@ textarea {
 .titi {
   top-margin: 0;
   font-size:22px;
+	float:left;
   text-align: center;
-  padding-right: 400px;
   text-decoration: none;
+}
+@media screen and (min-width: 800px) {
+   /* 表示領域が800px以上の場合に適用するスタイル */
+	 .titi {
+	   top-margin: 0;
+	   font-size:22px;
+		 float:left;
+	 	 margin-right: 400px;
+	   text-align: center;
+	   text-decoration: none;
+	 }
 }
 
 div :hover { text-decoration: none;}
