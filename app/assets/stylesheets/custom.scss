@@ -5,7 +5,7 @@
 @media screen and (max-width: 640px) {
 	img {
 		max-width: 100% ;		/* 横幅の90% */
-				/* height 縦幅を自動調整 */
+		height : auto;	/* height 縦幅を自動調整 */
 	}
 }
 body {
@@ -59,7 +59,7 @@ textarea {
 	.in {
 	  top-margin: 0;
 	  font-size:20px;
-	  float:left;
+	  float:right;
 	  padding-left: 0px;
 	  padding-right: 30px;
 	  text-decoration: none;
@@ -69,8 +69,8 @@ textarea {
 /*スマホ*/
 .titi {
   top-margin: 0;
-	margin-left: 100px;
-  font-size:16px;
+	margin-left: 70px;
+  font-size:17px;
 	float:left;
   text-align: center;
   text-decoration: none;
@@ -103,8 +103,8 @@ div :hover { text-decoration: none;}
 @media screen and (max-width: 640px) {
 	.tit {
 	  top-margin: 0;
-	  font-size:16px;
-		margin-left: 80px;
+	  font-size:17px;
+		margin-left: 70px;
 	  float:left;
 		text-align: center;
 	  text-decoration: none;
